@@ -1,0 +1,13 @@
+n=int(input())
+list=[]
+temp=[]
+for i in range (n):
+       x=int(input())
+       list.append()
+for i in range (n):
+       if list[i]>-1:
+          temp.append(list[i])
+for i in range(n):
+       if list[i]<=-1:
+          temp.append(list[i])
+print(t)
