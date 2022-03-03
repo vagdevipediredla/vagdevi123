@@ -1,0 +1,36 @@
+P=[]
+n=int(input('enter the size : '))
+print('enter the elements: ')
+for i in range(n):
+    row=[]
+    for j in range(n):
+        row.append(int(input()))
+    P.append(row)
+print(P)
+
+for i in range(n):
+    for j in range(n):
+        print(P[i][j],end=' ')
+        print()
+Q=[]
+n=int(input('enter the size : '))
+print('enter the elements: ')
+for i in range(n):
+    row=[]
+    for j in range(n):
+        row.append(int(input()))
+    Q.append(row)
+print(Q)
+
+for i in range(n):
+    for j in range(n):
+        print(Q[i][j],end=' ')
+        print()
+result=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(n):
+    for j in range(len(P[0])):
+        for k in range(len(Q)):
+         result[i][j]=P[i][j]*Q[i][j]
+print('resultant matrix is : ')
+for r in result:
+    print(r)
