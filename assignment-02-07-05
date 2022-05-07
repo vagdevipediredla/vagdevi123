@@ -1,0 +1,17 @@
+import math
+def is_square(k):
+       x=math.sqrt(k)
+       y=(x-math.floor(x))
+       return y
+n=int(input())
+l=[]
+for i in range(1,n+1):
+      l.append(i)
+d={}
+for i in l:
+      y=is_square(i)
+      if(y==0):
+                  d[i]='yes'
+      else:
+                  d[i]='no'
+print(d)
