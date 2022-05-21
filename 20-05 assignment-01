@@ -1,0 +1,6 @@
+class Solution:
+       def singleNumber(self,num):
+               sum=0
+               for i in num:
+                        sum=sum^i
+               print(sum)
